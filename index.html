@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body >
+    <main class="flex-contenedor">
+
+        <div class="bloque-logo">
+            <img src="Visuales/Vector.png" id="logoAlura">
+        </div>
+
+        <div class="bloque-centro">
+            <textarea type="text" name="ingreso" id="textoIngreso" required placeholder="Ingrese el texto aquí"></textarea>
+            <img src="Visuales/info.png" id="info-logo">
+            <p id="condicion-minusculas">Sólo letras minúsculas y sin acentos</p>
+            <button type="button" id="botonEncriptar">Encriptar</button>
+            <button type="button" id="botonDesencriptar">Desencriptar</button>
+        </div>
+        
+        <div class="bloque-salida">
+            <textarea readonly="readonly" name="salida" id="textoSalida"></textarea>
+            <img src="Visuales/Muñeco.png" id="munheco">
+            <p id="sin-mensaje">Ningún mensaje fue encontrado</p>
+            <p id="instruccion">Ingresa el mensaje que deseas encriptar o desencriptar</p>           
+            <button type="button" id="botonCopiar">Copiar</button>
+        </div>
+    </main>  
+    
+</body>
+<script>
+    function encriptar(){
+        var textoEntrada = document.getElementById("textoIngreso").value.toLowerCase();
+        var textoEncriptado = textoEntrada.replace(/e/img, "enter");
+        var textoEncriptado = textoEncriptado.replace(/i/img, "imes");
+        var textoEncriptado = textoEncriptado.replace(/a/img, "ai");
+        var textoEncriptado = textoEncriptado.replace(/o/img, "ober");
+        var textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
+
+        document.getElementById("textoSalida").innerHTML = textoEncriptado;
+    }
+
+    var btn1 = document.querySelector("#botonEncriptar");
+    btn1.onclick = encriptar;
+
+    function desencriptar(){
+        var textoEntrada = document.getElementById("textoIngreso").value.toLowerCase();
+        var textoDesencriptado = textoEntrada.replace(/enter/img, "e");
+        var textoDesencriptado = textoDesencriptado.replace(/imes/img, "i");
+        var textoDesencriptado = textoDesencriptado.replace(/ai/img, "a");
+        var textoDesencriptado = textoDesencriptado.replace(/ober/img, "o");
+        var textoDesencriptado = textoDesencriptado.replace(/ufat/img, "u");
+
+        document.getElementById("textoSalida").innerHTML = textoDesencriptado; 
+    }
+
+    var btn2 = document.querySelector("#botonDesencriptar");
+    btn2.onclick = desencriptar;
+     
+
+    function copiar(){
+        var contenido = document.querySelector("#textoSalida");
+        contenido.select();
+        document.execCommand("copy");
+    }
+
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+
+
+
+
+</script>
+</html>
