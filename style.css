@@ -120,16 +120,16 @@ body{
     }
 
     #textoSalida{
-        
         display: inline;
         position: absolute;
-        height: 88%;
+        height: 84%;
         top: 6%;
         left: 65%;
         width: 25%;
+        padding: 20px;
         font-weight: 400;
         font-family: 'Inter', sans-serif;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 36px;
         color:#495057;
         border: none;
@@ -142,7 +142,7 @@ body{
     #botonCopiar{
         position: absolute;
         top: 80%;
-        left: 68%;
+        left: 69%;
         background-color:none;
         width: 20%;
         border: 1px solid #0A3871;
@@ -153,6 +153,16 @@ body{
         font-size: 16px;
         visibility: hidden;
         
+    }
+
+    #sleepy{
+        display: block;
+        color: #0A3871;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        position: absolute;
+        bottom: 2%;
+        left: 40%;
     }
    
 }
@@ -170,7 +180,7 @@ body{
         position: absolute;
         width: 84%;
         height: 300px;
-        top: 20%;
+        top: 17%;
         left: 7%;
         font-weight: 400;
         font-family: 'Inter', sans-serif;
@@ -192,7 +202,7 @@ body{
     #info-logo{
         width: 2.5%;
         position: absolute;
-        top: 50%;
+        top: 50.5%;
         left:4%;
        
     }
@@ -200,7 +210,7 @@ body{
     #condicion-minusculas{
         position: absolute;
         top: 50%;
-        left:7%;
+        left:8%;
         color:#495057;
         font-family: 'Inter', sans-serif;
         size: 12px;
@@ -214,12 +224,11 @@ body{
     }
     
     #botonEncriptar{
-        display: block;
         position: absolute;
-        top: 55%;
-        left:5%;
+        top: 57%;
+        left:7%;
         background-color: #0A3871;
-        width: 90%;
+        width: 85%;
         border: none;
         border-radius: 24px;
         padding: 24px;
@@ -230,12 +239,11 @@ body{
     }
     
     #botonDesencriptar{
-        display: block;
         position: absolute;
-        top: 65%;
-        left:5%;
+        top: 70%;
+        left:7%;
         background-color: #D8DFE8;
-        width: 90%;
+        width: 85%;
         border: 1px solid #0A3871;
         border-radius: 24px;
         padding: 24px;
@@ -247,10 +255,11 @@ body{
 
     #textoSalida{
         position: absolute;
-        top: 80%;
-        left: 5%;
-        width: 90%;
-        height: 250px;
+        top: 85%;
+        left: 7%;
+        width: 81%;
+        height: 30%;
+        padding: 15px;
         font-weight: 400;
         font-family: 'Inter', sans-serif;
         font-size: 24px;
@@ -261,15 +270,13 @@ body{
         background-color: #FFFFFF;
         resize: none;
         outline: none;
-        
-    
     }
     
     
     #sinmensaje{
         position: absolute;
-        top: 85%;
-        left:10%;
+        top: 90%;
+        left:12%;
         width: 80%;
         font-size: 24px;
         font-weight: 700;
@@ -283,8 +290,8 @@ body{
     #instruccion{
         position: absolute;
         width: 80%;
-        top: 90%;
-        left:10%;  
+        top: 98%;
+        left:11%;  
         font-size: 20px;
         font-weight: 400;
         color: #495057;
@@ -296,9 +303,9 @@ body{
     #botonCopiar{
         position: absolute;
         background-color:none;
-        width: 80%;
-        top:95%;
-        left:10%;
+        width: 76%;
+        top:107%;
+        left:13.5%;
         border: 1px solid #0A3871;
         border-radius: 24px;
         padding: 24px;
@@ -306,6 +313,17 @@ body{
         font-family: 'Inter', sans-serif;
         font-size: 16px;
         visibility: visible;
+    }
+
+    #sleepy{
+        display: block;
+        color: #0A3871;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        position: absolute;
+        top: 120%;
+        left: 20%;
+        margin: 2%;
     }
     
 }
