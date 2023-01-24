@@ -23,61 +23,18 @@
             <textarea type="text" name="ingreso" id="textoIngreso" required placeholder="Ingrese el texto aquí"></textarea>
             <img src="Visuales/info.png" id="info-logo">
             <p id="condicion-minusculas">Sólo letras minúsculas y sin acentos</p>
-            <button type="button" id="botonEncriptar">Encriptar</button>
-            <button type="button" id="botonDesencriptar">Desencriptar</button>
+            <button type="button" id="botonEncriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button type="button" id="botonDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
         </div>
         
         <div class="bloque-salida">
             <textarea readonly="readonly" name="salida" id="textoSalida"></textarea>
             <img src="Visuales/Muñeco.png" id="munheco">
-            <p id="sin-mensaje">Ningún mensaje fue encontrado</p>
+            <p id="sinmensaje">Ningún mensaje fue encontrado</p>
             <p id="instruccion">Ingresa el mensaje que deseas encriptar o desencriptar</p>           
             <button type="button" id="botonCopiar">Copiar</button>
         </div>
     </main>  
-    
+    <script src="script.js"></script>
 </body>
-<script>
-    function encriptar(){
-        var textoEntrada = document.getElementById("textoIngreso").value.toLowerCase();
-        var textoEncriptado = textoEntrada.replace(/e/img, "enter");
-        var textoEncriptado = textoEncriptado.replace(/i/img, "imes");
-        var textoEncriptado = textoEncriptado.replace(/a/img, "ai");
-        var textoEncriptado = textoEncriptado.replace(/o/img, "ober");
-        var textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
-
-        document.getElementById("textoSalida").innerHTML = textoEncriptado;
-    }
-
-    var btn1 = document.querySelector("#botonEncriptar");
-    btn1.onclick = encriptar;
-
-    function desencriptar(){
-        var textoEntrada = document.getElementById("textoIngreso").value.toLowerCase();
-        var textoDesencriptado = textoEntrada.replace(/enter/img, "e");
-        var textoDesencriptado = textoDesencriptado.replace(/imes/img, "i");
-        var textoDesencriptado = textoDesencriptado.replace(/ai/img, "a");
-        var textoDesencriptado = textoDesencriptado.replace(/ober/img, "o");
-        var textoDesencriptado = textoDesencriptado.replace(/ufat/img, "u");
-
-        document.getElementById("textoSalida").innerHTML = textoDesencriptado; 
-    }
-
-    var btn2 = document.querySelector("#botonDesencriptar");
-    btn2.onclick = desencriptar;
-     
-
-    function copiar(){
-        var contenido = document.querySelector("#textoSalida");
-        contenido.select();
-        document.execCommand("copy");
-    }
-
-    var btn3 = document.querySelector("#botonCopiar");
-    btn3.onclick = copiar;
-
-
-
-
-</script>
 </html>

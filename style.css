@@ -59,7 +59,7 @@ body{
         
     }
 
-    #sin-mensaje{
+    #sinmensaje{
         position: absolute;
         width: 20%;
         top: 50%;
@@ -151,6 +151,7 @@ body{
         color: #0A3871;
         font-family: 'Inter', sans-serif;
         font-size: 16px;
+        visibility: hidden;
         
     }
    
@@ -271,7 +272,7 @@ body{
     }
     
     
-    #sin-mensaje{
+    #sinmensaje{
         position: absolute;
         display: inline;
         width: 80%;
