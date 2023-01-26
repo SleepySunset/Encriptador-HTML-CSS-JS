@@ -34,7 +34,11 @@ function desencriptar(){
 
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar();
-
+    textoIngreso.value = "";
+    munheco.style.visibility = "hidden";
+    botonCopiar.style.visibility = "visible";
+    instruccion.style.visibility = "hidden";
+    sinmensaje.style.visibility = "hidden";
 }
 
 
