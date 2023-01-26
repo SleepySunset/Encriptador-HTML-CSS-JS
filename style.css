@@ -3,7 +3,7 @@ body{
 }
 
 
-@media (min-width:800px){
+@media (min-width:1000px){
     
     #logoAlura{
         padding: 0;
@@ -63,7 +63,8 @@ body{
         position: absolute;
         width: 20%;
         top: 50%;
-        left: 68%;
+        left: 69%;
+        margin: 1.5%;
         font-size: 24px;
         font-weight: 700;
         font-style: bold;
@@ -79,7 +80,8 @@ body{
         position: absolute;
         width: 20%;
         top: 65%;
-        left: 68%;
+        margin: 1.5%;
+        left: 69%;
         font-size: 16px;
         font-weight: 400;
         color: #495057;
@@ -97,7 +99,7 @@ body{
         width: 20%;
         border: none;
         border-radius: 24px;
-        padding: 24px;
+        padding: 22px;
         color: #FFFFFF;
         font-family: 'Inter', sans-serif;
         font-size: 16px;
@@ -112,7 +114,7 @@ body{
         width: 20%;
         border: 1px solid #0A3871;
         border-radius: 24px;
-        padding: 24px;
+        padding: 22px;
         color: #0A3871;
         font-family: 'Inter', sans-serif;
         font-size: 16px;
@@ -122,11 +124,11 @@ body{
     #textoSalida{
         display: inline;
         position: absolute;
-        height: 84%;
+        height: 80%;
         top: 6%;
         left: 65%;
-        width: 25%;
-        padding: 20px;
+        width: 26%;
+        padding: 2%;
         font-weight: 400;
         font-family: 'Inter', sans-serif;
         font-size: 28px;
@@ -142,12 +144,12 @@ body{
     #botonCopiar{
         position: absolute;
         top: 80%;
-        left: 69%;
+        left: 70%;
         background-color:none;
         width: 20%;
         border: 1px solid #0A3871;
         border-radius: 24px;
-        padding: 24px;
+        padding: 22px;
         color: #0A3871;
         font-family: 'Inter', sans-serif;
         font-size: 16px;
@@ -162,12 +164,183 @@ body{
         font-size: 16px;
         position: absolute;
         bottom: 2%;
-        left: 40%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-bottom: 15px;
+        width: 50%;
+        text-align: center;
+        
     }
    
 }
 
- @media (max-width:800px){
+@media (max-width:600px){
+    
+    #logoAlura{
+        width: 5%;
+        padding-top: 5%;
+        padding-left: 5%;
+        
+    }
+    
+    #textoIngreso{
+        position: absolute;
+        width: 84%;
+        height: 300px;
+        top: 17%;
+        left: 7%;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        line-height: 48px;
+        color: #0A3871;
+        border: none;
+        background-color: #E9ECF8;
+        resize: none;
+        outline: none;    
+    }
+    
+    ::placeholder { 
+        color: #0A3871;
+        opacity: 1;
+    }
+    
+    
+    #info-logo{
+        width: 4%;
+        position: absolute;
+        top: 50.5%;
+        left:4%;
+       
+    }
+    
+    #condicion-minusculas{
+        position: absolute;
+        top: 50%;
+        left:8%;
+        color:#495057;
+        font-family: 'Inter', sans-serif;
+        size: 12px;
+        
+    }
+         
+    
+    #munheco{
+        visibility: hidden;
+        display: none;
+    }
+    
+    #botonEncriptar{
+        position: absolute;
+        top: 57%;
+        left:7%;
+        margin-bottom: 2%;
+        background-color: #0A3871;
+        width: 85%;
+        border: none;
+        border-radius: 24px;
+        padding: 24px;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    
+    }
+    
+    #botonDesencriptar{
+        position: absolute;
+        top: 65%;
+        left:7%;
+        background-color: #D8DFE8;
+        width: 85%;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        padding: 24px;
+        color: #0A3871;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    
+    }
+
+    #textoSalida{
+        position: absolute;
+        top: 85%;
+        left: 7%;
+        width: 81%;
+        height: 40%;
+        padding: 15px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        line-height: 36px;
+        color:#495057;
+        border: none;
+        border-radius: 24px;
+        background-color: #FFFFFF;
+        resize: none;
+        outline: none;
+    }
+    
+    
+    #sinmensaje{
+        position: absolute;
+        top: 92%;
+        left:12%;
+        width: 80%;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: bold;
+        line-height: 40px;
+        color: #343A40;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+    }
+       
+    #instruccion{
+        position: absolute;
+        width: 80%;
+        top: 102%;
+        left:11%;  
+        font-size: 20px;
+        font-weight: 400;
+        color: #495057;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        line-height: 20px;
+    }
+
+    
+    #botonCopiar{
+        position: absolute;
+        background-color:none;
+        width: 76%;
+        top:107%;
+        left:13.5%;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        padding: 24px;
+        color: #0A3871;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        visibility: hidden;
+    }
+
+    #sleepy{
+        color: #0A3871;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        position: absolute;
+        padding: 15px 10px 10px 0;
+        top: 120%;
+        padding-left: 25%;
+        padding-right: 25%;
+        width: 50%;
+        
+    }
+    
+}
+
+
+ @media (max-width:1000px){
     
     #logoAlura{
         width: 5%;
@@ -202,7 +375,7 @@ body{
     #info-logo{
         width: 2.5%;
         position: absolute;
-        top: 50.5%;
+        top: 50%;
         left:4%;
        
     }
@@ -214,6 +387,7 @@ body{
         color:#495057;
         font-family: 'Inter', sans-serif;
         size: 12px;
+        width: 60;
         
     }
          
@@ -227,6 +401,7 @@ body{
         position: absolute;
         top: 57%;
         left:7%;
+        margin-bottom: 2%;
         background-color: #0A3871;
         width: 85%;
         border: none;
@@ -281,7 +456,7 @@ body{
         font-size: 24px;
         font-weight: 700;
         font-style: bold;
-        line-height: 20px;
+        line-height: 30px;
         color: #343A40;
         text-align: center;
         font-family: 'Inter', sans-serif;
@@ -290,40 +465,45 @@ body{
     #instruccion{
         position: absolute;
         width: 80%;
-        top: 98%;
+        top: 100%;
         left:11%;  
         font-size: 20px;
         font-weight: 400;
         color: #495057;
         text-align: center;
         font-family: 'Inter', sans-serif;
+        line-height: 25px;
     }
 
     
     #botonCopiar{
         position: absolute;
         background-color:none;
-        width: 76%;
+        width: 60%;
         top:107%;
-        left:13.5%;
+        left:20%;
         border: 1px solid #0A3871;
         border-radius: 24px;
         padding: 24px;
         color: #0A3871;
         font-family: 'Inter', sans-serif;
         font-size: 16px;
-        visibility: visible;
+        visibility: hidden;
     }
 
     #sleepy{
         display: block;
         color: #0A3871;
         font-family: 'Inter', sans-serif;
-        font-size: 16px;
+        font-size: 20px;
         position: absolute;
         top: 120%;
-        left: 20%;
-        margin: 2%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-bottom: 15px;
+        width: 50%;
+        text-align: center;
+        
     }
     
 }
